@@ -1,0 +1,378 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    background-color: white;
+    margin-right: 100px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 100px;
+}
+li{
+    margin: 24px 15px 15px 15px;
+    list-style-type: none;
+    font-size: 1.2em;
+
+}
+
+nav a:link {
+    color: darkgray;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: darkgray;
+        text-decoration: none;
+}
+
+nav a:hover {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: darkgray;
+    color: white;
+    text-decoration: underline;
+}
+
+svg {
+    width: 220px;
+    margin-top: -200px;
+    margin-bottom: -150px;
+    margin-left: 100px;
+}
+
+.line {
+    fill: white;
+    stroke: pink;
+    stroke-width: 5;
+    stroke-dasharray: 101;
+    stroke-dashoffset: 101;
+}
+
+.draw {
+   animation: draw 1s linear forwards;
+}
+
+@keyframes draw {
+    50%{
+    stroke-dashoffset: 0;
+    fill: white;
+    }
+    100%{
+    stroke-dashoffset: 0;
+    fill: pink;
+    }
+}
+
+#grid-about-page{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        ". b1 b2 ."
+        ". b3 b4 ."
+        ". b5 b6 ."
+}
+
+#pic-1{
+    grid-area: b1;
+    margin: 0 5px 5px 5px;
+}
+
+#about{
+    grid-area: b2;
+    margin: 0 5px 5px 5px;
+}
+
+#about2{
+    grid-area: b3;
+    margin: 0 5px 5px 5px;
+}
+
+#pic-2{
+    grid-area: b4;
+    margin: 0 5px 5px 100px;
+}
+
+#v5{
+    grid-area: b5;
+}
+
+#t1{
+    grid-area: b6;
+}
+
+img {
+    align-items: center;
+}
+
+h1, h2{
+    color: darkgray;
+}
+
+#grid-portfolio-page{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        ". f1 f2 ."
+        ". f3 f4 ."
+}
+
+.bw {
+    height: 40vw;
+    width: 40vw;
+    grid-area: f1;
+    margin: 5px 10px 5px 5px;
+    background: darkgray;
+    text-align: center;
+    line-height: 100px;
+    animation: animate 1.5s infinite;
+}
+
+
+.bw:hover {
+    opacity: .8;
+    border-radius: 50%;
+    color: yellow;
+}
+
+.bu {
+    height: 40vw;
+    width: 40vw;
+    grid-area: f2;
+    margin: 5px 10px 5px 5px;
+    background: darkgray;
+    text-align: center;
+    line-height: 100px;
+    animation: animate 10.5s infinite;
+}
+
+.bu:hover {
+    opacity: .8;
+    border-radius: 50%;
+    color: yellow;
+}
+
+.ba {
+    height: 40vw;
+    width: 40vw;
+    grid-area: f3;
+    margin: 7px 10px 5px 5px;
+    background: darkgray;
+    text-align: center;
+    line-height: 100px;
+    animation: animate 1.5s infinite;
+}
+
+.ba:hover {
+    opacity: .8;
+    border-radius: 50%;
+    color: yellow;
+}
+
+.bc {
+    height: 40vw;
+    width: 40vw;
+    grid-area: f4;
+    margin: 7px 10px 5px 5px;
+    background: darkgray;
+    text-align: center;
+    line-height: 100px;
+    animation: animate 1.5s infinite;
+}
+
+.bc:hover {
+    opacity: .8;
+    border-radius: 50%;
+    color: yellow;
+}
+
+.port {
+    text-align: center;
+    height: auto;
+    padding: 35% 0;
+}
+
+/*Link for Basic web*/
+
+.bw a: link{
+    color: white;
+    text-decoration: none;
+}
+
+.bw a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.bw a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.bw a:active {
+    color: yellow;
+    text-decoration: underline;
+}
+.bw a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+/*Link for Basic UX*/
+
+.bu a: link{
+    color: white;
+    text-decoration: none;
+}
+
+.bu a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.bu a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.bu a:active {
+    color: yellow;
+    text-decoration: underline;
+}
+.bu a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+/*Link for Basic Animation*/
+
+.ba a: link{
+    color: white;
+    text-decoration: none;
+}
+
+.ba a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.ba a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.ba a:active {
+    color: yellow;
+    text-decoration: underline;
+}
+.ba a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+/*Link for Basic Content*/
+
+.bc a: link{
+    color: white;
+    text-decoration: none;
+}
+
+.bc a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.bc a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.bc a:active {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.bc a:any-link {
+    color: white;
+    text-decoration: none;
+}
+
+.ext-links a:link{
+    color: black;
+    text-decoration: none;
+}
+.ext-links a:visited{
+    color: black;
+    text-decoration: none;
+
+}.ext-links a:hover{
+    color: black;
+    text-decoration: underline;
+
+}.ext-links a:active{
+    color: black;
+    text-decoration: underline;
+}
+
+#grid-web {
+    display: grid;
+    grid-template-columns: 200px 1fr 350px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". w1 ."
+}
+
+.web {
+    grid-area: w1;
+}
+
+#grid-ux {
+    display: grid;
+    grid-template-columns: 200px 1fr 350px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". u1 ."
+}
+
+.ux {
+    grid-area: u1;
+}
+
+#grid-animation {
+    display: grid;
+    grid-template-columns: 200px 1fr 350px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". w1 ."
+}
+
+.animation {
+    grid-area: w1;
+}
+
+#grid-content {
+    display: grid;
+    grid-template-columns: 200px 1fr 350px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". w1 ."
+}
+
+.content {
+    grid-area: w1;
+}
+
+
+
+
+
+
+
