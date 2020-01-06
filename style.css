@@ -114,6 +114,16 @@ img {
 
 h1, h2{
     color: darkgray;
+  font-family: "Avenir next", sans-serif;
+}
+
+p{
+  font-family: "Avenir next", sans-serif;
+}
+
+a{
+  font-family: "Avenir next", sans-serif;
+
 }
 
 #grid-portfolio-page{
@@ -132,13 +142,13 @@ h1, h2{
     margin: 5px 10px 5px 5px;
     background: darkgray;
     text-align: center;
-    line-height: 100px;
+    line-height: 65vh;
     animation: animate 1.5s infinite;
 }
 
 
 .bw:hover {
-    opacity: .8;
+    opacity: .7;
     border-radius: 50%;
     color: yellow;
 }
@@ -150,12 +160,12 @@ h1, h2{
     margin: 5px 10px 5px 5px;
     background: darkgray;
     text-align: center;
-    line-height: 100px;
+    line-height: 65vh;
     animation: animate 10.5s infinite;
 }
 
 .bu:hover {
-    opacity: .8;
+    opacity: .7;
     border-radius: 50%;
     color: yellow;
 }
@@ -167,12 +177,12 @@ h1, h2{
     margin: 7px 10px 5px 5px;
     background: darkgray;
     text-align: center;
-    line-height: 100px;
+    line-height: 65vh;
     animation: animate 1.5s infinite;
 }
 
 .ba:hover {
-    opacity: .8;
+    opacity: .7;
     border-radius: 50%;
     color: yellow;
 }
@@ -184,12 +194,12 @@ h1, h2{
     margin: 7px 10px 5px 5px;
     background: darkgray;
     text-align: center;
-    line-height: 100px;
+    line-height: 65vh;
     animation: animate 1.5s infinite;
 }
 
 .bc:hover {
-    opacity: .8;
+    opacity: .7;
     border-radius: 50%;
     color: yellow;
 }
@@ -207,6 +217,11 @@ h1, h2{
     text-decoration: none;
 }
 
+.bw a:any-link {
+    text-decoration: none;
+    margin-top: 300px;
+}
+
 .bw a:visited {
     color: white;
     text-decoration: none;
@@ -221,15 +236,16 @@ h1, h2{
     color: yellow;
     text-decoration: underline;
 }
-.bw a:any-link {
-    color: white;
-    text-decoration: none;
-}
+
 
 /*Link for Basic UX*/
 
 .bu a: link{
     color: white;
+    text-decoration: none;
+}
+
+.bu a:any-link {
     text-decoration: none;
 }
 
@@ -247,15 +263,16 @@ h1, h2{
     color: yellow;
     text-decoration: underline;
 }
-.bu a:any-link {
-    color: white;
-    text-decoration: none;
-}
+
 
 /*Link for Basic Animation*/
 
 .ba a: link{
     color: white;
+    text-decoration: none;
+}
+
+.ba a:any-link {
     text-decoration: none;
 }
 
@@ -273,15 +290,16 @@ h1, h2{
     color: yellow;
     text-decoration: underline;
 }
-.ba a:any-link {
-    color: white;
-    text-decoration: none;
-}
+
 
 /*Link for Basic Content*/
 
 .bc a: link{
     color: white;
+    text-decoration: none;
+}
+
+.bc a:any-link {
     text-decoration: none;
 }
 
@@ -300,11 +318,9 @@ h1, h2{
     text-decoration: underline;
 }
 
-.bc a:any-link {
-    color: white;
-    text-decoration: none;
-}
 
+
+/*Links for projects*/
 .ext-links a:link{
     color: black;
     text-decoration: none;
@@ -322,9 +338,11 @@ h1, h2{
     text-decoration: underline;
 }
 
+
+
 #grid-web {
     display: grid;
-    grid-template-columns: 200px 1fr 350px;
+    grid-template-columns: 200px 1fr 470px;
     grid-template-rows: 1fr;
     grid-template-areas:
         ". w1 ."
@@ -336,7 +354,7 @@ h1, h2{
 
 #grid-ux {
     display: grid;
-    grid-template-columns: 200px 1fr 350px;
+    grid-template-columns: 200px 1fr 470px;
     grid-template-rows: 1fr;
     grid-template-areas:
         ". u1 ."
@@ -370,9 +388,46 @@ h1, h2{
     grid-area: w1;
 }
 
+/*Footer*/
+.mail a:link {
+    color: darkgray;
+    text-decoration: none;
+}
 
+.mail a:any-link {
+    text-decoration: none;
+}
 
+.mail a:visited {
+    color: darkgray;
+    text-decoration: none;
+}
 
+.mail a:hover {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+.mail a:active {
+    color: darkgray;
+    text-decoration: underline;
+}
+
+#grid-footer{
+    display: grid;
+    grid-template-columns: 200px 1fr 350px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". f1 ."
+}
+
+.mail{
+    grid-area: f1;
+    color: darkgray;
+    background-color: white;
+    margin-top: 10%;
+}
+/*footer ends*/
 
 
 
