@@ -241,6 +241,8 @@ a {
     text-align: center;
     height: auto;
     padding: 35% 0;
+    font-size: 1.5em;
+    color: white;
 }
 
 /*Link for Basic web*/
@@ -334,6 +336,10 @@ a {
 
 
 /*Links for projects*/
+.ext-links a:any-link {
+    color: black;
+    text-decoration: underline;
+}
 
 .ext-links a:visited {
     color: black;
@@ -351,7 +357,6 @@ a {
     color: black;
     text-decoration: underline;
 }
-
 
 
 #grid-web {
@@ -494,6 +499,10 @@ a {
 
     .logo-color {
         height: 100px;
+    }
+
+    .about-me {
+        height: 450px;
     }
 }
 
@@ -646,10 +655,6 @@ a {
             ". b4 ."
     }
 
-    img {
-        padding: 0 20vw;
-    }
-
     #pic-1 {
         grid-area: b1;
         padding: 0 10px 0 4px;
@@ -674,6 +679,10 @@ a {
         padding: 0 0;
     }
 
+    .about-me {
+        height: 450px;
+    }
+
     .logo-color {
         padding: 0 0 20px 0;
         height: 200px;
@@ -686,135 +695,145 @@ a {
         grid-template-areas:
             "f1"
     }
+}
 
-    @media screen and (max-width: 550px) {
-        #grid-content {
-            grid-template-columns: 10px 1fr 10px;
-        }
-
-        header a {
-            display: block;
-            float: none;
-            text-align: left;
-            position: relative;
-        }
-
-        ul {
-            float: none;
-        }
-
-        #grid-footer {
-            display: grid;
-            grid-template-columns: 20px 1fr 35px;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                ". f1 ."
-        }
-
-        .front-p {
-            border-color: yellow;
-            border-style: solid;
-            background-color: white;
-            text-align: center;
-            padding: 50px;
-        }
-
-        .headliner {
-            font-size: 2em;
-        }
-
-        #grid-web {
-            display: grid;
-            grid-template-columns: 2px 1fr 2px;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                ". w1 ."
-        }
-
-        .web {
-            grid-area: w1;
-        }
-
-        #grid-ux {
-            display: grid;
-            grid-template-columns: 2px 1fr 2px;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                ". u1 ."
-        }
-
-        .ux {
-            grid-area: u1;
-        }
-
-        #grid-animation {
-            display: grid;
-            grid-template-columns: 2px 1fr 2px;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                ". a1 ."
-        }
-
-        .animation {
-            grid-area: a1;
-        }
-
-        #grid-content {
-            display: grid;
-            grid-template-columns: 2px 550px 2px;
-            grid-template-rows: 1fr;
-            grid-template-areas:
-                ". c1 ."
-        }
-
-        .content {
-            grid-area: c1;
-            padding: 0 30px 0 0;
-        }
-
-
-        #grid-about-page {
-            display: grid;
-            grid-template-columns: 7px 1fr 7px;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-                ". b1 ."
-                ". b2 ."
-                ". b3 ."
-                ". b4 ."
-        }
-
-        img {
-            padding: 0 10vw;
-        }
-
-        #pic-1 {
-            grid-area: b1;
-            padding: 0 5px;
-        }
-
-        #about {
-            grid-area: b2;
-            padding: 0 5px;
-        }
-
-        #about2 {
-            grid-area: b3;
-            padding: 0 5px;
-        }
-
-        #pic-2 {
-            grid-area: b4;
-            padding: 0 5px;
-        }
-
-        img {
-            padding: 0 0;
-            height: 150px;
-        }
-
-        .logo-color {
-            height: 100px;
-            padding-left: 25px;
-        }
+@media screen and (max-width: 550px) {
+    #grid-content {
+        grid-template-columns: 10px 1fr 10px;
     }
+
+    header a {
+        display: block;
+        float: none;
+        text-align: left;
+        position: relative;
+    }
+
+    ul {
+        float: none;
+    }
+
+    #grid-footer {
+        display: grid;
+        grid-template-columns: 20px 1fr 35px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". f1 ."
+    }
+
+    .front-p {
+        border-color: yellow;
+        border-style: solid;
+        background-color: white;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .headliner {
+        font-size: 2em;
+    }
+
+    #grid-web {
+        display: grid;
+        grid-template-columns: 2px 1fr 2px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". w1 ."
+    }
+
+    .web {
+        grid-area: w1;
+    }
+
+    #grid-ux {
+        display: grid;
+        grid-template-columns: 2px 1fr 2px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". u1 ."
+    }
+
+    .ux {
+        grid-area: u1;
+    }
+
+    #grid-animation {
+        display: grid;
+        grid-template-columns: 2px 1fr 2px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". a1 ."
+    }
+
+    .animation {
+        grid-area: a1;
+    }
+
+    #grid-content {
+        display: grid;
+        grid-template-columns: 2px 550px 2px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". c1 ."
+    }
+
+    .content {
+        grid-area: c1;
+        padding: 0 30px 0 0;
+    }
+
+
+    #grid-about-page {
+        display: grid;
+        grid-template-columns: 7px 1fr 7px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". b1 ."
+            ". b2 ."
+            ". b3 ."
+            ". b4 ."
+    }
+
+    img {
+        padding: 0 10vw;
+    }
+
+    #pic-1 {
+        grid-area: b1;
+        padding: 0 5px;
+    }
+
+    #about {
+        grid-area: b2;
+        padding: 0 5px;
+    }
+
+    #about2 {
+        grid-area: b3;
+        padding: 0 5px;
+    }
+
+    #pic-2 {
+        grid-area: b4;
+        padding: 0 5px;
+    }
+
+    img {
+        padding: 0 0;
+        height: 150px;
+    }
+
+    .logo-color {
+        height: 100px;
+        padding-left: 25px;
+    }
+
+    .port {
+        font-size: 1em;
+        color: white;
+    }
+
+    .about-me {
+        height: 450px;
+    }
+}
