@@ -157,7 +157,6 @@ p {
 
 a {
     font-family: "Avenir next", sans-serif;
-
 }
 
 #grid-portfolio-page {
@@ -246,11 +245,6 @@ a {
 
 /*Link for Basic web*/
 
-.bw a: link {
-    color: white;
-    text-decoration: none;
-}
-
 .bw a:any-link {
     text-decoration: none;
     margin-top: 300px;
@@ -274,11 +268,6 @@ a {
 
 /*Link for Basic UX*/
 
-.bu a: link {
-    color: white;
-    text-decoration: none;
-}
-
 .bu a:any-link {
     text-decoration: none;
 }
@@ -300,11 +289,6 @@ a {
 
 
 /*Link for Basic Animation*/
-
-.ba a: link {
-    color: white;
-    text-decoration: none;
-}
 
 .ba a:any-link {
     text-decoration: none;
@@ -328,11 +312,6 @@ a {
 
 /*Link for Basic Content*/
 
-.bc a: link {
-    color: white;
-    text-decoration: none;
-}
-
 .bc a:any-link {
     text-decoration: none;
 }
@@ -355,10 +334,6 @@ a {
 
 
 /*Links for projects*/
-.ext-links a:link {
-    color: black;
-    text-decoration: underline;
-}
 
 .ext-links a:visited {
     color: black;
@@ -408,11 +383,11 @@ a {
     grid-template-columns: 200px 1fr 470px;
     grid-template-rows: 1fr;
     grid-template-areas:
-        ". w1 ."
+        ". a1 ."
 }
 
 .animation {
-    grid-area: w1;
+    grid-area: a1;
 }
 
 #grid-content {
@@ -420,20 +395,17 @@ a {
     grid-template-columns: 200px 1fr 470px;
     grid-template-rows: 1fr;
     grid-template-areas:
-        ". w1 ."
+        ". c1 ."
 }
 
 .content {
-    grid-area: w1;
+    grid-area: c1;
 }
 
 /*Footer*/
-.mail a:link {
-    color: darkgray;
-    text-decoration: none;
-}
 
 .mail a:any-link {
+    color: darkgray;
     text-decoration: none;
 }
 
@@ -472,7 +444,7 @@ a {
 @media screen and (max-width: 1200px) {
     #grid-web {
         display: grid;
-        grid-template-columns: 200px 1fr 250px;
+        grid-template-columns: 150px 650px 250px;
         grid-template-rows: 1fr;
         grid-template-areas:
             ". w1 ."
@@ -480,7 +452,7 @@ a {
 
     #grid-ux {
         display: grid;
-        grid-template-columns: 200px 1fr 250px;
+        grid-template-columns: 150px 650px 250px;
         grid-template-rows: 1fr;
         grid-template-areas:
             ". u1 ."
@@ -488,18 +460,18 @@ a {
 
     #grid-animation {
         display: grid;
-        grid-template-columns: 200px 1fr 250px;
+        grid-template-columns: 150px 650px 250px;
         grid-template-rows: 1fr;
         grid-template-areas:
-            ". w1 ."
+            ". a1 ."
     }
 
     #grid-content {
         display: grid;
-        grid-template-columns: 200px 1fr 250px;
+        grid-template-columns: 150px 650px 250px;
         grid-template-rows: 1fr;
         grid-template-areas:
-            ". w1 ."
+            ". c1 ."
     }
 
     #grid-about-page {
@@ -516,6 +488,13 @@ a {
         margin: 0 5px 5px 20px;
     }
 
+    img {
+        height: 200px;
+    }
+
+    .logo-color {
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 810px) {
@@ -600,34 +579,51 @@ a {
 
     #grid-web {
         display: grid;
-        grid-template-columns: 100px 1fr 150px;
+        grid-template-columns: 10px 500px 150px;
         grid-template-rows: 1fr;
         grid-template-areas:
             ". w1 ."
     }
 
+    .web {
+        grid-area: w1;
+    }
+
     #grid-ux {
         display: grid;
-        grid-template-columns: 100px 1fr 150px;
+        grid-template-columns: 10px 500px 150px;
         grid-template-rows: 1fr;
         grid-template-areas:
             ". u1 ."
     }
 
+    .ux {
+        grid-area: u1;
+    }
+
     #grid-animation {
         display: grid;
-        grid-template-columns: 100px 1fr 150px;
+        grid-template-columns: 10px 500px 150px;
         grid-template-rows: 1fr;
         grid-template-areas:
-            ". w1 ."
+            ". a1 ."
+    }
+
+    .animation {
+        grid-area: a1;
     }
 
     #grid-content {
         display: grid;
-        grid-template-columns: 100px 1fr 150px;
+        grid-template-columns: 10px 500px 150px;
         grid-template-rows: 1fr;
         grid-template-areas:
-            ". w1 ."
+            ". c1 ."
+    }
+
+    .content {
+        grid-area: c1;
+        padding: 0 30px 0 0;
     }
 
     .front-p {
@@ -674,76 +670,151 @@ a {
         padding: 0 10px 0 4px;
     }
 
-}
-
-@media screen and (max-width: 550px) {
-    #grid-content {
-        grid-template-columns: 10px 1fr 10px;
+    img {
+        padding: 0 0;
     }
 
-    header a {
-        display: block;
-        float: none;
-        text-align: left;
-        position: relative;
-    }
-
-    ul {
-        float: none;
+    .logo-color {
+        padding: 0 0 20px 0;
+        height: 200px;
     }
 
     #grid-footer {
         display: grid;
-        grid-template-columns: 20px 1fr 35px;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            ". f1 ."
+            "f1"
     }
 
-    .front-p {
-        border-color: yellow;
-        border-style: solid;
-        background-color: white;
-        text-align: center;
-        padding: 50px;
-    }
+    @media screen and (max-width: 550px) {
+        #grid-content {
+            grid-template-columns: 10px 1fr 10px;
+        }
 
-    .headliner {
-        font-size: 2em;
-    }
+        header a {
+            display: block;
+            float: none;
+            text-align: left;
+            position: relative;
+        }
 
-    #grid-about-page {
-        display: grid;
-        grid-template-columns: 7px 1fr 7px;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            ". b1 ."
-            ". b2 ."
-            ". b3 ."
-            ". b4 ."
-    }
+        ul {
+            float: none;
+        }
 
-    img {
-        padding: 0 10vw;
-    }
+        #grid-footer {
+            display: grid;
+            grid-template-columns: 20px 1fr 35px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                ". f1 ."
+        }
 
-    #pic-1 {
-        grid-area: b1;
-        padding: 0 5px;
-    }
+        .front-p {
+            border-color: yellow;
+            border-style: solid;
+            background-color: white;
+            text-align: center;
+            padding: 50px;
+        }
 
-    #about {
-        grid-area: b2;
-        padding: 0 5px;
-    }
+        .headliner {
+            font-size: 2em;
+        }
 
-    #about2 {
-        grid-area: b3;
-        padding: 0 5px;
-    }
+        #grid-web {
+            display: grid;
+            grid-template-columns: 2px 1fr 2px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                ". w1 ."
+        }
 
-    #pic-2 {
-        grid-area: b4;
-        padding: 0 5px;
+        .web {
+            grid-area: w1;
+        }
+
+        #grid-ux {
+            display: grid;
+            grid-template-columns: 2px 1fr 2px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                ". u1 ."
+        }
+
+        .ux {
+            grid-area: u1;
+        }
+
+        #grid-animation {
+            display: grid;
+            grid-template-columns: 2px 1fr 2px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                ". a1 ."
+        }
+
+        .animation {
+            grid-area: a1;
+        }
+
+        #grid-content {
+            display: grid;
+            grid-template-columns: 2px 550px 2px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                ". c1 ."
+        }
+
+        .content {
+            grid-area: c1;
+            padding: 0 30px 0 0;
+        }
+
+
+        #grid-about-page {
+            display: grid;
+            grid-template-columns: 7px 1fr 7px;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                ". b1 ."
+                ". b2 ."
+                ". b3 ."
+                ". b4 ."
+        }
+
+        img {
+            padding: 0 10vw;
+        }
+
+        #pic-1 {
+            grid-area: b1;
+            padding: 0 5px;
+        }
+
+        #about {
+            grid-area: b2;
+            padding: 0 5px;
+        }
+
+        #about2 {
+            grid-area: b3;
+            padding: 0 5px;
+        }
+
+        #pic-2 {
+            grid-area: b4;
+            padding: 0 5px;
+        }
+
+        img {
+            padding: 0 0;
+            height: 150px;
+        }
+
+        .logo-color {
+            height: 100px;
+            padding-left: 25px;
+        }
     }
-}
