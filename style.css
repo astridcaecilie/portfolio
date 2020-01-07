@@ -1,4 +1,4 @@
-ul{
+ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -6,13 +6,15 @@ ul{
     background-color: white;
     margin-right: 100px;
 }
-nav{
+
+nav {
     position: fixed;
     top: 0;
     width: 100%;
     padding-right: 100px;
 }
-li{
+
+li {
     margin: 24px 15px 15px 15px;
     list-style-type: none;
     font-size: 1.2em;
@@ -26,7 +28,7 @@ nav a:link {
 
 nav a:visited {
     color: darkgray;
-        text-decoration: none;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -45,6 +47,7 @@ svg {
     margin-top: -200px;
     margin-bottom: -150px;
     margin-left: 100px;
+    display: block;
 }
 
 .line {
@@ -56,80 +59,111 @@ svg {
 }
 
 .draw {
-   animation: draw 1s linear forwards;
+    animation: draw 1s linear forwards;
+}
+
+.front-p {
+    border-color: yellow;
+    border-style: solid;
+    background-color: white;
+    margin: 0 100px 0 100px;
+    text-align: center;
+    padding: 100px;
+}
+
+.front-p a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.front-p a:any-link {
+    text-decoration: none;
+    color: black;
+}
+
+.front-p a:visited {
+    text-decoration: none;
+}
+
+.front-p a:hover {
+    text-decoration: none;
+}
+
+.front-p a:active {
+    text-decoration: none;
+}
+
+.headliner {
+    font-size: 5em;
 }
 
 @keyframes draw {
-    50%{
-    stroke-dashoffset: 0;
-    fill: white;
+    50% {
+        stroke-dashoffset: 0;
+        fill: white;
     }
-    100%{
-    stroke-dashoffset: 0;
-    fill: pink;
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: pink;
     }
 }
 
-#grid-about-page{
+#grid-about-page {
     display: grid;
     grid-template-columns: 100px 1fr 1fr 250px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         ". b1 b2 ."
         ". b3 b4 ."
-        ". b5 b6 ."
 }
 
-#pic-1{
+#pic-1 {
     grid-area: b1;
     margin: 0 5px 5px 5px;
 }
 
-#about{
+#about {
     grid-area: b2;
     margin: 0 5px 5px 5px;
 }
 
-#about2{
+#about2 {
     grid-area: b3;
-    margin: 0 5px 5px 5px;
+    margin: 0 0px 5px 5px;
 }
 
-#pic-2{
+#pic-2 {
     grid-area: b4;
-    margin: 0 5px 5px 100px;
+    margin: 0 5px 5px 200px;
 }
 
-#v5{
-    grid-area: b5;
-}
-
-#t1{
-    grid-area: b6;
-}
-
+/*
 img {
     align-items: center;
 }
+*/
 
-h1, h2{
+h1,
+h2,
+h3 {
     color: darkgray;
-  font-family: "Avenir next", sans-serif;
+    font-family: "Avenir next", sans-serif;
 }
 
-p{
-  font-family: "Avenir next", sans-serif;
+p {
+    font-family: "Avenir next", sans-serif;
 }
 
-a{
-  font-family: "Avenir next", sans-serif;
+a {
+    font-family: "Avenir next", sans-serif;
 
 }
 
-#grid-portfolio-page{
+#grid-portfolio-page {
     display: grid;
     grid-template-columns: 100px 1fr 1fr 250px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         ". f1 f2 ."
         ". f3 f4 ."
@@ -142,7 +176,7 @@ a{
     margin: 5px 10px 5px 5px;
     background: darkgray;
     text-align: center;
-    line-height: 65vh;
+    line-height: 400px;
     animation: animate 1.5s infinite;
 }
 
@@ -160,7 +194,7 @@ a{
     margin: 5px 10px 5px 5px;
     background: darkgray;
     text-align: center;
-    line-height: 65vh;
+    line-height: 400px;
     animation: animate 10.5s infinite;
 }
 
@@ -212,7 +246,7 @@ a{
 
 /*Link for Basic web*/
 
-.bw a: link{
+.bw a: link {
     color: white;
     text-decoration: none;
 }
@@ -240,7 +274,7 @@ a{
 
 /*Link for Basic UX*/
 
-.bu a: link{
+.bu a: link {
     color: white;
     text-decoration: none;
 }
@@ -267,7 +301,7 @@ a{
 
 /*Link for Basic Animation*/
 
-.ba a: link{
+.ba a: link {
     color: white;
     text-decoration: none;
 }
@@ -294,7 +328,7 @@ a{
 
 /*Link for Basic Content*/
 
-.bc a: link{
+.bc a: link {
     color: white;
     text-decoration: none;
 }
@@ -321,19 +355,24 @@ a{
 
 
 /*Links for projects*/
-.ext-links a:link{
+.ext-links a:link {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
-.ext-links a:visited{
-    color: black;
-    text-decoration: none;
 
-}.ext-links a:hover{
+.ext-links a:visited {
     color: black;
     text-decoration: underline;
 
-}.ext-links a:active{
+}
+
+.ext-links a:hover {
+    color: black;
+    text-decoration: underline;
+
+}
+
+.ext-links a:active {
     color: black;
     text-decoration: underline;
 }
@@ -366,7 +405,7 @@ a{
 
 #grid-animation {
     display: grid;
-    grid-template-columns: 200px 1fr 350px;
+    grid-template-columns: 200px 1fr 470px;
     grid-template-rows: 1fr;
     grid-template-areas:
         ". w1 ."
@@ -378,7 +417,7 @@ a{
 
 #grid-content {
     display: grid;
-    grid-template-columns: 200px 1fr 350px;
+    grid-template-columns: 200px 1fr 470px;
     grid-template-rows: 1fr;
     grid-template-areas:
         ". w1 ."
@@ -413,21 +452,298 @@ a{
     text-decoration: underline;
 }
 
-#grid-footer{
+#grid-footer {
     display: grid;
-    grid-template-columns: 200px 1fr 350px;
+    grid-template-columns: 100px 1fr 350px;
     grid-template-rows: 1fr;
     grid-template-areas:
         ". f1 ."
 }
 
-.mail{
+.mail {
     grid-area: f1;
     color: darkgray;
     background-color: white;
     margin-top: 10%;
 }
+
 /*footer ends*/
 
+@media screen and (max-width: 1200px) {
+    #grid-web {
+        display: grid;
+        grid-template-columns: 200px 1fr 250px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". w1 ."
+    }
 
+    #grid-ux {
+        display: grid;
+        grid-template-columns: 200px 1fr 250px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". u1 ."
+    }
 
+    #grid-animation {
+        display: grid;
+        grid-template-columns: 200px 1fr 250px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". w1 ."
+    }
+
+    #grid-content {
+        display: grid;
+        grid-template-columns: 200px 1fr 250px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". w1 ."
+    }
+
+    #grid-about-page {
+        display: grid;
+        grid-template-columns: 10px 1fr 1fr 50px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            ". b1 b2 ."
+            ". b3 b4 ."
+    }
+
+    #pic-2 {
+        grid-area: b4;
+        margin: 0 5px 5px 20px;
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+    #grid-content {
+        grid-template-columns: 100px 1fr 250px;
+    }
+
+    ul {
+        float: none;
+    }
+
+    svg {
+        width: 220px;
+        margin-top: -100px;
+        margin-bottom: -150px;
+        margin-left: 60px;
+        display: block;
+    }
+
+    #grid-footer {
+        display: grid;
+        grid-template-columns: 100px 1fr 10px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". f1 ."
+    }
+
+    #grid-portfolio-page {
+        display: grid;
+        grid-template-columns: 30% 1fr 30%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". p1 ."
+            ". p2 ."
+            ". p3 ."
+            ". p4 ."
+    }
+
+    .bw {
+        height: 40vw;
+        width: 40vw;
+        grid-area: p1;
+        margin: 5px 5px 5px 5px;
+        background: darkgray;
+        text-align: center;
+        line-height: 300px;
+        animation: animate 1.5s infinite;
+    }
+
+    .bu {
+        height: 40vw;
+        width: 40vw;
+        grid-area: p2;
+        margin: 5px 10px 5px 5px;
+        background: darkgray;
+        text-align: center;
+        line-height: 300px;
+        animation: animate 10.5s infinite;
+    }
+
+    .ba {
+        height: 40vw;
+        width: 40vw;
+        grid-area: p3;
+        margin: 7px 10px 5px 5px;
+        background: darkgray;
+        text-align: center;
+        line-height: 300px;
+        animation: animate 1.5s infinite;
+    }
+
+    .bc {
+        height: 40vw;
+        width: 40vw;
+        grid-area: p4;
+        margin: 7px 10px 5px 5px;
+        background: darkgray;
+        text-align: center;
+        line-height: 300px;
+        animation: animate 1.5s infinite;
+    }
+
+    #grid-web {
+        display: grid;
+        grid-template-columns: 100px 1fr 150px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". w1 ."
+    }
+
+    #grid-ux {
+        display: grid;
+        grid-template-columns: 100px 1fr 150px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". u1 ."
+    }
+
+    #grid-animation {
+        display: grid;
+        grid-template-columns: 100px 1fr 150px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". w1 ."
+    }
+
+    #grid-content {
+        display: grid;
+        grid-template-columns: 100px 1fr 150px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". w1 ."
+    }
+
+    .front-p {
+        border-color: yellow;
+        border-style: solid;
+        background-color: white;
+        margin: 0 10px 0 10px;
+        text-align: center;
+        padding: 50px;
+    }
+
+    #grid-about-page {
+        display: grid;
+        grid-template-columns: 6px 1fr 25px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". b1 ."
+            ". b2 ."
+            ". b3 ."
+            ". b4 ."
+    }
+
+    img {
+        padding: 0 20vw;
+    }
+
+    #pic-1 {
+        grid-area: b1;
+        padding: 0 10px 0 4px;
+    }
+
+    #about {
+        grid-area: b2;
+        padding: 0 10px 0 4px;
+    }
+
+    #about2 {
+        grid-area: b3;
+        padding: 0 10px 0 4px;
+    }
+
+    #pic-2 {
+        grid-area: b4;
+        padding: 0 10px 0 4px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    #grid-content {
+        grid-template-columns: 10px 1fr 10px;
+    }
+
+    header a {
+        display: block;
+        float: none;
+        text-align: left;
+        position: relative;
+    }
+
+    ul {
+        float: none;
+    }
+
+    #grid-footer {
+        display: grid;
+        grid-template-columns: 20px 1fr 35px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            ". f1 ."
+    }
+
+    .front-p {
+        border-color: yellow;
+        border-style: solid;
+        background-color: white;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .headliner {
+        font-size: 2em;
+    }
+
+    #grid-about-page {
+        display: grid;
+        grid-template-columns: 7px 1fr 7px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". b1 ."
+            ". b2 ."
+            ". b3 ."
+            ". b4 ."
+    }
+
+    img {
+        padding: 0 10vw;
+    }
+
+    #pic-1 {
+        grid-area: b1;
+        padding: 0 5px;
+    }
+
+    #about {
+        grid-area: b2;
+        padding: 0 5px;
+    }
+
+    #about2 {
+        grid-area: b3;
+        padding: 0 5px;
+    }
+
+    #pic-2 {
+        grid-area: b4;
+        padding: 0 5px;
+    }
+}
